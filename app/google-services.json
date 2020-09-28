@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "571647360584",
+    "firebase_url": "https://smart-pantry-76477.firebaseio.com",
+    "project_id": "smart-pantry-76477",
+    "storage_bucket": "smart-pantry-76477.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571647360584:android:9a9a7f083e119f2603a27d",
+        "android_client_info": {
+          "package_name": "singh.jaskirat.smartpantry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571647360584-8c9fnsb3f2q4brf2usj1lhli3eapsv7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7ADB3sipNtp5Ovz9aEBZzG1VNlRvMPlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571647360584-8c9fnsb3f2q4brf2usj1lhli3eapsv7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textViewLA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:text="Login"
+        android:textColor="@android:color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/textView4LA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewLA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"
+        android:text="Please Login to start" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="32dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4LA"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/emailBtnLA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/passwordBtnLA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/emailBtnLA"
+            android:hint="Password"
+
+            android:inputType="textPassword" />
+        <Button
+            android:id="@+id/loginBtnLA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordBtnLA"
+            android:layout_marginTop="30dp"
+            android:theme="@style/AppTheme.Button"
+            android:text="Login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginBtnLA"
+            android:layout_marginTop="30dp"
+            android:id="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            android:text="Already have an account? "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupBtnLA"
+            android:layout_toEndOf="@id/textView5"
+            android:layout_below="@id/loginBtnLA"
+            android:layout_marginTop="30dp"
+            android:text=" Sign Up"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorPrimary"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
