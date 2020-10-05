@@ -48,11 +48,12 @@ public class LoginActivity extends AppCompatActivity {
                                             Log.d("TAAAG", document.getId() + " => " + document.get("email"));
                                             if (document.get("password").toString()
                                                     .equals(passwordEt.getText().toString())) {
-                                                //Toast.makeText(LoginActivity.this, "LOGGED IN", Toast.LENGTH_SHORT).show();
-                                                startActivity(new Intent(LoginActivity.this, CheckPantry.class));
+//                                                Toast.makeText(LoginActivity.this, "LOGGED IN", Toast.LENGTH_SHORT).show();
+                                                startActivity(new Intent(LoginActivity.this, CheckPantry.class)
+                                                         .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                                                 finish();
                                             } else {
-                                                //Toast.makeText(LoginActivity.this, "Incorrect email or password", Toast.LENGTH_SHORT).show();
+//                                                Toast.makeText(LoginActivity.this, "Incorrect email or password", Toast.LENGTH_SHORT).show();
                                             }
                                         }
                                     } else {
