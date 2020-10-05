@@ -52,13 +52,21 @@
             android:layout_marginTop="30dp"
             android:layout_below="@id/emailBtnSU"
             android:hint="Password"
-            
+            android:inputType="textPassword" />
+        <EditText
+            android:id="@+id/confirmPassBtnSU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/passwordBtnSU"
+            android:hint="Confirm Password"
             android:inputType="textPassword" />
         <Button
             android:id="@+id/signupBtnSU"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/passwordBtnSU"
+            android:layout_below="@id/confirmPassBtnSU"
             android:layout_marginTop="30dp"
             android:theme="@style/AppTheme.Button"
             android:text="Sign Up" />
