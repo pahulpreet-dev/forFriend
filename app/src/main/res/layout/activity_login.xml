@@ -5,8 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@drawable/cart">
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_bg">
     <TextView
         android:id="@+id/textViewLA"
         android:layout_width="wrap_content"
@@ -84,5 +90,5 @@
             android:textColor="@color/colorPrimary"
             />
     </RelativeLayout>
-
+    </RelativeLayout>
 </RelativeLayout>

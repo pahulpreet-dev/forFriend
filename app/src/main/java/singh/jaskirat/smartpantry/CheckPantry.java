@@ -25,11 +25,10 @@ public class CheckPantry extends AppCompatActivity {
 
         final int[] pantryImages = {R.drawable.ginger
                 , R.drawable.onions
-                , R.drawable.garlic
-                , R.drawable.potato
-                , R.drawable.redchilli
-                , R.drawable.greenchilly};
-        String[] g = {};
+                , R.drawable.lasan
+                , R.drawable.aloo
+        };
+        String[] g = {"250g", "900g", "100g", "1200g"};
 
         gridView.setAdapter(new PantryAdapter(CheckPantry.this, g, pantryImages));
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -50,7 +49,7 @@ public class CheckPantry extends AppCompatActivity {
         public PantryAdapter(Context c,String[] g,int[] pantryImages ) {
             mContext = c;
             this.pantryImages = pantryImages;
-            //this.web = web;
+            this.g = g;
         }
 
         @Override
@@ -77,7 +76,7 @@ public class CheckPantry extends AppCompatActivity {
             TextView gTv = v.findViewById(R.id.textViewCP);
             ImageView pantryIv = v.findViewById(R.id.imageViewCP);
 
-            gTv.setText("G");
+            gTv.setText(g[position]);
             pantryIv.setImageResource(pantryImages[position]);
 
             return v;
